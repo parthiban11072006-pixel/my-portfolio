@@ -4,68 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parthiban | Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <img src="my-photo.jpg" alt="Parthiban" class="profile-pic">
-        <h1>Hi, I'm Parthiban</h1>
-        <p>Engineering Student & Aspiring Frontend Developer</p>
-        <a href="resume.pdf.pdf" target="_blank" class="btn">Download Resume</a>
-    </section>
+    <!-- Header / Navbar -->
+    <header>
+        <div class="logo">Parthiban.dev</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+        </nav>
+    </header>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>My Skills</h2>
-        <div class="skills-container">
-            <span class="skill-item">HTML</span>
-            <span class="skill-item">CSS</span>
-            <span class="skill-item">JavaScript</span>
-            <span class="skill-item">React</span>
+    <!-- Hero Section with Photo and Resume -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-img-box">
+                <!-- Unoda photo file name: my-photo.jpg -->
+                <img src="my-photo.jpg" alt="Parthiban" class="profile-pic">
+            </div>
+            <div class="hero-text-box">
+                <h1>Hi, I'm <span>Parthiban</span></h1>
+                <p>Frontend Developer & Web Creator building amazing web applications.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn primary-btn">Explore Projects</a>
+                    <!-- Unoda resume file name: resume.pdf (Screenshot la resume.pdf.pdf nu iruntha anga resume.pdf nu mathiko) -->
+                    <a href="resume.pdf" target="_blank" class="btn secondary-btn" download><i class="fas fa-download"></i> Download Resume</a>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project-container">
-
-            <!-- Interactive Counter App -->
+    <section class="projects" id="projects">
+        <h2 class="section-title">My <span>Projects</span></h2>
+        
+        <div class="project-grid">
+            
+            <!-- Project 1: AI Hypercar Showroom -->
             <div class="project-card">
-                <h3>Interactive Counter App</h3>
-                <p>A dynamic counter application developed using JavaScript DOM manipulation.</p>
-                <a href="https://github.com/parthiban11072006-pixel/interactive-counter-app.git" target="_blank" class="btn">GitHub Code</a>
-                <a href="https://parthiban11072006-pixel.github.io/interactive-counter-app" target="_blank" class="btn">Live Demo</a>
+                <div class="project-info">
+                    <h3>🏎️ AI Hypercar Showroom</h3>
+                    <p>An immersive futuristic hypercar showroom website built with advanced UI design.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/parthiban11072006-pixel/ai-hypercar-showroom.git" target="_blank" class="github-btn"><i class="fab fa-github"></i> Code</a>
+                        <a href="https://ai-hypercar-showroom-git-main-parthiban11072006-pixels-projects.vercel.app/" target="_blank" class="live-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
             </div>
 
-            <!-- Weather App -->
+            <!-- Project 2: MovieHub -->
             <div class="project-card">
-                <h3>Weather App</h3>
-                <p>An interactive weather application that fetches real-time data from external APIs.</p>
-                <a href="https://github.com/parthiban11072006-pixel/weather-app.git" target="_blank" class="btn">GitHub Code</a>
-                <a href="https://parthiban11072006-pixel.github.io/weather-app/" target="_blank" class="btn">Live Demo</a>
+                <div class="project-info">
+                    <h3>🎬 MovieHub</h3>
+                    <p>A web application to explore movies, search films, and view details dynamically.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/parthiban11072006-pixel/MovieHub" target="_blank" class="github-btn"><i class="fab fa-github"></i> Code</a>
+                        <a href="https://movie-hub-chi-eight.vercel.app" target="_blank" class="live-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
             </div>
 
-              <!-- YouTube Project -->
+            <!-- Project 3: Geo Map App -->
             <div class="project-card">
-                <h3>YouTube Project</h3>
-                <p>A responsive video streaming interface built using React components.</p>
-                <a href="https://vercel.com/parthiban11072006-pixels-projects/youtube-project/14XjwNKKapFUEyTYsnaG5qTt6Ada" target="_blank" class="btn">GitHub Code</a>
-                <a href="https://youtube-project-8yes7qvhs-parthiban11072006-pixels-projects.vercel.app" target="_blank" class="btn">Live Demo</a>
+                <div class="project-info">
+                    <h3>🗺️ Geo Map App</h3>
+                    <p>An interactive mapping application to explore locations and geographic data seamlessly.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/parthiban11072006-pixel/geo-map-app" target="_blank" class="github-btn"><i class="fab fa-github"></i> Code</a>
+                        <a href="https://geo-map-fjipguxm1-parthiban11072006-pixels-projects.vercel.app" target="_blank" class="live-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
             </div>
 
-            <!-- Geo Map App -->
+            <!-- Project 4: YouTube Project -->
             <div class="project-card">
-                <h3>Geo Map App</h3>
-                <p>A location-based application built using React and map integration services.</p>
-                <a href="https://github.com/parthiban11072006-pixel/geo-map-app" target="_blank" class="btn">GitHub Code</a>
-                <a href="https://geo-map-fjipguxm1-parthiban11072006-pixels-projects.vercel.app" target="_blank" class="btn">Live Demo</a>
+                <div class="project-info">
+                    <h3>📺 YouTube Clone / Project</h3>
+                    <p>A video-sharing UI frontend project mimicking modern streaming platforms.</p>
+                    <div class="project-links">
+                        <a href="https://vercel.com/parthiban11072006-pixels-projects/youtube-project/14XjwNKKapFUEyTYsnaG5qTt6Ada" target="_blank" class="github-btn"><i class="fab fa-github"></i> Code</a>
+                        <a href="https://youtube-project-8yes7qvhs-parthiban11072006-pixels-projects.vercel.app" target="_blank" class="live-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5: Weather App -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>⛅ Weather App</h3>
+                    <p>Real-time weather application fetching live meteorological data for cities worldwide.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/parthiban11072006-pixel/weather-app.git" target="_blank" class="github-btn"><i class="fab fa-github"></i> Code</a>
+                        <a href="https://parthiban11072006-pixel.github.io/weather-app/" target="_blank" class="live-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 6: Interactive Counter App -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>🔢 Interactive Counter App</h3>
+                    <p>A sleek and responsive counter app with smooth UI states and custom increments.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/parthiban11072006-pixel/interactive-counter-app.git" target="_blank" class="github-btn"><i class="fab fa-github"></i> Code</a>
+                        <a href="https://parthiban11072006-pixel.github.io/interactive-counter-app" target="_blank" class="live-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
             </div>
 
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Parthiban. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
