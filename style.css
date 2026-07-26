@@ -86,7 +86,7 @@ nav a:hover {
 
 .hero-text-box h1 {
     font-size: 3rem;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .hero-text-box h1 span {
@@ -96,7 +96,31 @@ nav a:hover {
 .hero-text-box p {
     font-size: 1.15rem;
     color: #94a3b8;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
+}
+
+/* Hero Contact Details Style */
+.hero-contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    color: #38bdf8;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.contact-item:hover {
+    color: #0ea5e9;
+    text-decoration: underline;
 }
 
 .hero-btns {
@@ -173,7 +197,7 @@ nav a:hover {
 }
 
 .project-info h3 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin-bottom: 10px;
     color: #f8fafc;
 }
@@ -235,6 +259,9 @@ footer {
     }
     .hero-text-box {
         text-align: center;
+    }
+    .hero-contact-info {
+        align-items: center;
     }
     .hero-btns {
         justify-content: center;
